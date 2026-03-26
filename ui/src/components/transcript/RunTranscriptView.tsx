@@ -437,11 +437,17 @@ export function normalizeTranscript(entries: TranscriptEntry[], streaming: boole
 
     if (entry.kind === "skill_injection") {
       // Attach to the most recent Skill tool block so it renders inside the card
+      const newContext = entry.text.replace(/^Base directory for this skill:[^\n]*\n+/, "").trim();
       const skillToolBlock = [...blocks].reverse().find(
         (b): b is Extract<TranscriptBlock, { type: "tool" }> => b.type === "tool" && b.name === "Skill",
       );
       if (skillToolBlock) {
-        skillToolBlock.skillContext = entry.text.replace(/^Base directory for this skill:[^\n]*\n+/, "").trim();
+        skillToolBlock.skillContext = skillToolBlock.skillContext
+          ? `${skillToolBlock.skillContext}\n\n${newContext}`
+          : newContext;
+      } else {
+        // Fallback: render as a plain user message so content isn't silently dropped
+        blocks.push({ type: "message", role: "user", ts: entry.ts, text: entry.text, streaming: false });
       }
       continue;
     }
