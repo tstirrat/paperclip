@@ -135,15 +135,15 @@ For full planning API flow and document linking, read: `skills/paperclip/referen
 
 Read these ONLY when the specific situation applies:
 
-| When...                                            | Read                                                                    |
-| -------------------------------------------------- | ----------------------------------------------------------------------- |
-| Setting up a new project (CEO/Manager)             | `skills/paperclip/references/workflows.md` (Project Setup)              |
-| Inviting OpenClaw employee (CEO)                   | `skills/paperclip/references/workflows.md` (OpenClaw Invite)            |
-| Installing/assigning company skills                | `skills/paperclip/references/company-skills.md`                         |
-| Creating or managing routines                      | `skills/paperclip/references/routines.md`                               |
-| Setting agent instructions path                    | `skills/paperclip/references/workflows.md` (Instructions Path)          |
-| Company import/export (CEO)                        | `skills/paperclip/references/workflows.md` (Import Export)              |
-| Searching issues with `q` param                    | `skills/paperclip/references/workflows.md` (Searching Issues)           |
-| Self-testing Paperclip (app-level)                 | `skills/paperclip/references/workflows.md` (Self Test)                  |
-| Key endpoint quick reference                       | `skills/paperclip/references/api-reference.md` (Quick Reference)        |
-| Detailed API schemas, error codes, worked examples | `skills/paperclip/references/api-reference.md`                          |
+| When...                                             | Read                                                                    |
+| --------------------------------------------------- | ----------------------------------------------------------------------- |
+| Setting up a new project (CEO/Manager)              | `skills/paperclip/references/workflows.md` (Project Setup)              |
+| Inviting OpenClaw employee (CEO)                    | `skills/paperclip/references/workflows.md` (OpenClaw Invite)            |
+| Installing/assigning company skills (**MUST read**) | `skills/paperclip/references/company-skills.md`                         |
+| Creating or managing routines                       | `skills/paperclip/references/routines.md`                               |
+| Setting agent instructions path                     | `skills/paperclip/references/workflows.md` (Instructions Path)          |
+| Company import/export (CEO)                         | `skills/paperclip/references/workflows.md` (Import Export)              |
+| Searching issues with `q` param                     | `skills/paperclip/references/workflows.md` (Searching Issues)           |
+| Self-testing Paperclip (app-level)                  | `skills/paperclip/references/workflows.md` (Self Test)                  |
+| Key endpoint quick reference                        | `skills/paperclip/references/api-reference.md` (Quick Reference)        |
+| Detailed API schemas, error codes, worked examples  | `skills/paperclip/references/api-reference.md`                          |
